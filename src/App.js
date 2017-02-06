@@ -7,7 +7,7 @@ class App extends Component {
         super();
         this.state={
             todos:[
-                {id:1, name:'Lern JSX',isComplete:true},
+                {id:1, name:'Learn JSX',isComplete:true},
                 {id:2, name:'Make awsome app', isComplete:false},
                 {id:3, name:'ship it!', isComplete:false}
             ],
