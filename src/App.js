@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import {ToDoForm} from './components/todo/ToDoForm'
 class App extends Component {
     constructor(){
         super();
@@ -28,9 +28,7 @@ class App extends Component {
           <h2>React ToDo's</h2>
         </div>
         <div className="ToDo-App">
-            <form action="">
-                <input type="text" onChange={this.hendleInputChange} value={this.state.currentToDo}/>
-            </form>
+            <ToDoForm/>
             <div className="ToDo-List">
                 <ul>
                     {this.state.todos.map(todo =>
