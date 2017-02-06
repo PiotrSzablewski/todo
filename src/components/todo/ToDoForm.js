@@ -8,3 +8,7 @@ export const ToDoForm=(props)=>(
                value={props.currentToDo}/>
     </form>
 )
+ToDoForm.propTypes = {
+    currentToDo: React.PropTypes.string.isRequired,
+    handleInputChange:React.PropTypes.func.isRequired
+}

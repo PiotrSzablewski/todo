@@ -10,3 +10,6 @@ export const ToDoList = (props)=>{
         </div>
     )
 }
+ToDoList.propTypes = {
+    todos:React.PropTypes.array.isRequired
+}
