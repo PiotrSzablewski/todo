@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export const ToDoForm=()=>(
+export const ToDoForm=(props)=>(
     <form action="">
         <input type="text"
-               onChange={this.hendleInputChange}
-               value={this.state.currentToDo}/>
+               onChange={props.handleInputChange}
+               value={props.currentToDo}/>
     </form>
 )

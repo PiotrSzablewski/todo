@@ -13,9 +13,9 @@ class App extends Component {
             ],
             currentToDo:''
         }
-        this.hendleInputChange =this.hendleInputChange.bind(this)
+        this.handleInputChange =this.handleInputChange.bind(this)
     }
-    hendleInputChange(evt){
+    handleInputChange(evt){
         this.setState({currentToDo: evt.target.value})
 
     }
@@ -28,7 +28,8 @@ class App extends Component {
           <h2>React ToDo's</h2>
         </div>
         <div className="ToDo-App">
-            <ToDoForm/>
+            <ToDoForm handleInputChange={this.handleInputChange}
+                      currentToDo={this.state.currentToDo}/>
             <div className="ToDo-List">
                 <ul>
                     {this.state.todos.map(todo =>
